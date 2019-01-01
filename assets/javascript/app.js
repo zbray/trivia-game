@@ -11,4 +11,8 @@ $(document).ready(function(){
 
 
 
+function gameInit
+
+
+
 }
