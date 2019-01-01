@@ -1,5 +1,11 @@
 body {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.startButton{
+  width:50%;
+  font-size: 36px;
+  display:block;
 }

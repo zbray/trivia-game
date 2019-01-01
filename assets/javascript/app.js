@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-  //Needed Variables
-  var correctAnswers;
-  var wrongAnswers;
-  var unansweredquestions;
+  //Global Variables
+  var correctCounter;
+  var incorrectCounter;
+  var unansweredCounter;
   var timeRemaining;
 
 //Displays quiz content and starts countdown when user clicks start
@@ -11,7 +11,10 @@ $(document).ready(function(){
 
 
 
-function gameInit
+//Questions
+var questions = {[
+  question: "What was the last country, nation "
+]}
 
 
 

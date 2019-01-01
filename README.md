@@ -1,6 +1,6 @@
 # TriviaGame
 
-This is a trivia game about world history and geography.
+This is a trivia game about world history.
 
 The user has a time limit of ## to select answers for all the questions that are presented to them.
 
