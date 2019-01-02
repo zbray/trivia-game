@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 //Displays quiz content and starts countdown when user clicks start
 $("#startButton").click(function(){
-  $("#gameScreen").fadeToggle(1);
+  $("#gameScreen, #startButton").fadeToggle(1);
 });
 
 // Hide the start button 
