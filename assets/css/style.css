@@ -1,4 +1,4 @@
-html {
+html{
   background-image: url("../images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -6,5 +6,10 @@ html {
   height:100%
 }
 
-.startButton{
+
+
+#startScreen{
+  margin: 200px;
+  text-align: center;
+  
 }
