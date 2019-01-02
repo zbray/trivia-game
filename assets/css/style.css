@@ -1,11 +1,12 @@
-body{
-  margin:0;
+body {
   background-image: url("../images/background.jpg");
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  height:100%;
-  background-repeat:no-repeat;
-  display: compact;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
 }
 
 
@@ -19,6 +20,7 @@ body{
 }
 
 #gameScreen{
+  padding-top:25px;
   display:hidden;
   text-align: center;
   
@@ -29,12 +31,18 @@ body{
 }
 
 
-.block {
+.choices {
 
 }
 
 
 .footer{
-  padding-bottom:5px;
+  /* position:absolute;*/
+  bottom:0;
+  text-align:center;
+  padding-bottom:25px;
+  padding-top: 50px;
   color:rgba(225, 230, 225, .8);
+  /* clear: both; */
+
 }
