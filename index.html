@@ -12,30 +12,71 @@
 <body>
 
   <div class="container">
-    <div id="startScreen">
-      <h1>World History Trivia</h1>
-      <!--Start Button-->
-      <button id="startButton">Start</button>
+
+      <!--Starting Screen-->
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="startScreen">
+        <h1 id="dude">World History Trivia</h1>
+        <button id="startButton">Start</button>
+      </div>
+      <div class="col-md-3"></div>
     </div>
-    <div id="gameScreen">
-      <div id="qOne">
-      </div>
-      <div id="qTwo">
-      </div>
-      <div id="qThree">
-      </div>
-      <div id="qFour">
-      </div>
-      <div id="qFive">
-      </div>
-      <div id="qSix">
-      </div>
-      <div id="qSeven">
+      <!--Game Screen-->
+    <div class="row" id="gameScreen">
+      <div class="col-md-3"></div>
+      <div class="col-md-6" id="gameText">
+        <h4>Time left: <span id="timeRemaining"></span></h4>
+        <div id="qOne">
+          <p>First Question </p>
+          <form class = "choices">
+            <input type="radio" value="male" checked> Male<br>
+            <input type="radio" value="female"> Female<br>
+            <input type="radio" value="other"> Other
+          </form>
+        </div>
+        <div id="qTwo">
+          <p>Second Question</p>
+          <form class = "choices">
+            <input type="radio" value="male" checked> Male<br>
+            <input type="radio" value="female"> Female<br>
+            <input type="radio" value="other"> Other
+          </form>
+        </div>
+        <div id="qThree">
+          <p>Third Question</p>
+          <form class = "choices">
+            <input type="radio" value="male" checked> Male<br>
+            <input type="radio" value="female"> Female<br>
+            <input type="radio" value="other"> Other<br>
+          </form>
+        </div>
+        <div id="qFour">
+          <p>Fourth Question</p>
+          <form class = "choices">
+            <input type="radio" value="male" checked> Male<br>
+            <input type="radio" value="female"> Female<br>
+            <input type="radio" value="other"> Other<br>
+          </form>
+        </div>
+        <div id="qFive">
+          <p>Fifth Question</p>
+        </div>
+        <div id="qSix">
+          <p>Sixth Question</p>
+        </div>
+        <div id="qSeven">
+          <p>Seventh Question</p>
+        </div>
+        <button id="submitButton">Submit</button>
       </div>
     </div>
   </div>
-
-
+<footer class="footer">
+  <div class="container-fluid text-center">
+      Copyright &copy; 2018 Zach Bray
+  </div>
+</footer>
 <!--Jquery and local Javascript links-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>

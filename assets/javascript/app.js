@@ -7,15 +7,27 @@ $(document).ready(function(){
   var timeRemaining;
 
 //Displays quiz content and starts countdown when user clicks start
-  $("#startButton").on("click", gameInit)
+Hide the start button 
+Display the questions
+Start the timer 
+
+
+//Submit button hides the game, displays results and displays reset button
+Submit button
+  Hide the game 
+  display results Screen with reset button
+
+Reset button
+  hides results Screen
+  Resets correctCounter 
+  resets inncorrect counter 
+  resets unanswered counter 
+  resets time remaining 
+  resets choices on questions 
+
+
 
 
 
 //Questions
-var questions = {[
-  question: "What was the last country, nation "
-]}
-
-
-
-}
+});
