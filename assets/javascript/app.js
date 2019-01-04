@@ -12,7 +12,7 @@ $("#startButton").click(function(){
   $("#quizContent").toggle();
 });
 
-//Submits Answers, returns totals, returns message based on score, offers reset
+//Submits Answers, returns totals, returns message based on score, maybe offers reset
 $("#submitButton").click(function(){
   $("#quizContent").toggle();
   $("#resultsContent").toggle();
