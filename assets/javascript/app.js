@@ -6,19 +6,19 @@ $(document).ready(function(){
   var unansweredCounter;
   var timeRemaining;
 
-
-// Hides gameScreen at start
-// $("#gameScreen").hide();
-
-//Displays quiz content, and starts countdown, hides start button when user clicks start
+//Displays quiz content, starts countdown, hides start button when user clicks start
 $("#startButton").click(function(){
   $("#startButton").hide();
   $("#quizContent").toggle();
 });
 
+//Submits Answers, returns totals, returns message based on score, offers reset
 $("#submitButton").click(function(){
-  $("#quizContent, #resultContent").toggle();
-})
+  $("#quizContent").toggle();
+  $("#resultsContent").toggle();
+});
+
+
 
 
 // Reset button
@@ -33,5 +33,5 @@ $("#submitButton").click(function(){
 
 
 
-//Questions
+
 });
