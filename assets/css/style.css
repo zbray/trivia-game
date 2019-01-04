@@ -11,7 +11,7 @@ body {
 
 
 
-#startScreen{
+#gameContent{
   margin:300px, auto, auto, auto;
   padding:20px;
   background-color:rgba(225, 230, 225, .8);
@@ -23,10 +23,11 @@ body {
   text-align: center;
 }
 
-#gameText{
+#quizContent{
   background-color:rgba(225, 230, 225, .8);
   display:none;
-  padding-top:20px;
+  padding:20px, auto, 20px, auto;
+  clear:both;
 }
 
 

@@ -13,15 +13,13 @@ $(document).ready(function(){
 //Displays quiz content, and starts countdown, hides start button when user clicks start
 $("#startButton").click(function(){
   $("#startButton").hide();
-  $("#gameText").toggle();
+  $("#quizContent").toggle();
 });
 
+$("#submitButton").click(function(){
+  $("#quizContent, #resultContent").toggle();
+})
 
-
-// //Submit button hides the game, displays results and displays reset button
-// Submit button
-//   Hide the game 
-//   display results Screen with reset button
 
 // Reset button
 //   hides results Screen
