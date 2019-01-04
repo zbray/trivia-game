@@ -20,7 +20,6 @@ $("#submitButton").click(function(){
 
 
 
-
 // Reset button
 //   hides results Screen
 //   Resets correctCounter 

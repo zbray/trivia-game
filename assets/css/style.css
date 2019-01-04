@@ -17,18 +17,21 @@ body {
   text-align: center;
 }
 
-#gameScreen{
+/* #gameScreen{
+  padding:20px;
+  width:500px;
   margin: 20px auto;
-  padding-bottom: 25px;
+  background-color:rgba(225, 230, 225, .8);
   text-align: center;
-  display:inline-block;
-}
+} */
 
 #quizContent{
-  background-color:rgba(225, 230, 225, .8);
+  padding:20px;
+  width:500px;
   margin: 20px auto;
+  background-color:rgba(225, 230, 225, .8);
+  text-align: center;
   display:none;
-  padding:20px, auto, 20px, auto;
 }
 
 
@@ -36,10 +39,12 @@ body {
 }
 
 #resultsContent{
+  width:500px;
   margin: 20px auto;
   background-color:rgba(225, 230, 225, .8);
-  /* display:none; */
+  display:none;
   padding:20px, auto, 20px, auto;
+  text-align:center;
 }
 
 .footer{
