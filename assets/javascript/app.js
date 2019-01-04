@@ -6,10 +6,14 @@ $(document).ready(function(){
   var unansweredCounter;
   var timeRemaining;
 
+
+// Hides gameScreen at start
+// $("#gameScreen").hide();
+
 //Displays quiz content, and starts countdown, hides start button when user clicks start
 $("#startButton").click(function(){
   $("#startButton").hide();
-  $("#gameScreen").show();
+  $("#gameText").toggle();
 });
 
 

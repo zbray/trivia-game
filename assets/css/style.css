@@ -15,19 +15,18 @@ body {
   margin:300px, auto, auto, auto;
   padding:20px;
   background-color:rgba(225, 230, 225, .8);
-  /* padding:300px; */
   text-align: center;
 }
 
 #gameScreen{
   padding-top: 25px;
-  display:none;
   text-align: center;
-  margin:auto;
 }
 
 #gameText{
   background-color:rgba(225, 230, 225, .8);
+  display:none;
+  padding-top:20px;
 }
 
 
@@ -37,12 +36,10 @@ body {
 
 
 .footer{
-  position:absolute;
+  position:fixed;
   bottom:0;
   text-align:center;
   padding-bottom:20px;
-  padding-top: 50px, 25px;
+  padding-top: 50px;
   color:rgba(225, 230, 225, .8);
-  /* clear: both; */
-
 }
