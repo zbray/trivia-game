@@ -18,7 +18,12 @@ $("#submitButton").click(function(){
   $("#resultsContent").toggle();
 });
 
-
+//Reset button hides results screen and shows quiz content
+//Reset button should reset all variables with integers and uncheck answer choices
+$("#resetButton").click(function(){
+  $("#startButton").toggle();
+  $("#resultsContent").toggle();
+})
 
 // Reset button
 //   hides results Screen
@@ -27,9 +32,6 @@ $("#submitButton").click(function(){
 //   resets unanswered counter 
 //   resets time remaining 
 //   resets choices on questions 
-
-
-
 
 
 
