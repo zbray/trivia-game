@@ -13,7 +13,7 @@ body {
 
 #startScreen{
   margin:300px, auto, auto, auto;
-  padding:25px;
+  padding:20px;
   background-color:rgba(225, 230, 225, .8);
   /* padding:300px; */
   text-align: center;
@@ -21,8 +21,9 @@ body {
 
 #gameScreen{
   padding-top: 25px;
-  display:hidden;
+  display:none;
   text-align: center;
+  margin:auto;
 }
 
 #gameText{
@@ -36,11 +37,11 @@ body {
 
 
 .footer{
-  /* position:absolute;*/
+  position:absolute;
   bottom:0;
   text-align:center;
-  padding-bottom:25px;
-  padding-top: 50px;
+  padding-bottom:20px;
+  padding-top: 50px, 25px;
   color:rgba(225, 230, 225, .8);
   /* clear: both; */
 
