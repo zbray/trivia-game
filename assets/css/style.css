@@ -21,6 +21,11 @@ body {
   text-align: center;
 }
 
+/* This gives the selections some space and was the best solution I could find to do so  */
+input[type="radio"]{
+  margin: 0 5px 0 5px;
+}
+
 /* #gameScreen{
   padding:20px;
   width:500px;
