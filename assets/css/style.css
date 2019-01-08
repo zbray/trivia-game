@@ -9,6 +9,10 @@ body {
   background-attachment: fixed;
 }
 
+.gameScreens{
+
+}
+
 #gameBanner{
   padding:20px;
   width:500px;
@@ -32,10 +36,6 @@ body {
   background-color:rgba(225, 230, 225, .8);
   text-align: center;
   display:none;
-}
-
-
-.choices {
 }
 
 #resultsContent{

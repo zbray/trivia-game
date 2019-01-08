@@ -11,7 +11,7 @@ $(document).ready(function(){
 $("#startButton").click(function(){
   $("#startButton").hide();
   $("#quizContent").toggle();
-  var counter = 60;
+  var counter = 120;
   setInterval(function(){
     counter--;
     if (counter >= 0) {
