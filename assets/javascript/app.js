@@ -2,11 +2,13 @@ $(document).ready(function(){
 
   //Global Variables
   var counter;
-  var correctCounter;
+  var correctCounter =0;
   var incorrectCounter;
   var unansweredCounter;
   var timeRemaining;
 
+
+// -----BUTTONS-----
 //Displays quiz content, starts countdown, hides start button when user clicks start
 $("#startButton").click(function(){
   $("#startButton").hide();
@@ -29,29 +31,23 @@ $("#startButton").click(function(){
 $("#submitButton").click(function(){
   $("#quizContent").toggle();
   $("#resultsContent").toggle();
+  check();
 });
 
 //Reset button unchecks previously selected answers, hides quizContent, hides results screen, resets counter integers
 //and displays startButton inviting user to try again.
-
 $("#resetButton").click(function(){
   $("#startButton").toggle();
   $("#resultsContent").toggle();
   $('input[type=radio]').prop('checked', function () {
     return this.getAttribute('checked') == 'checked';
 });
-})
-
-
-
-// Reset button
-//   hides results Screen
-//   Resets correctCounter 
-//   resets inncorrect counter 
-//   resets unanswered counter 
-//   resets time remaining 
-//   resets choices on questions 
-
-
-
 });
+
+//-----Question Check-----
+
+
+
+
+
+})
