@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   //Global Variables
   var counter;
-  var correctCounter =0;
+  var correctCounter= 0;
   var incorrectCounter;
   var unansweredCounter;
   var timeRemaining;
@@ -23,6 +23,7 @@ $("#startButton").click(function(){
    if (counter === 0) {
       alert("finished!");
       clearInterval(counter);
+      check();
     }
   }, 1000);
 });
@@ -45,7 +46,9 @@ $("#resetButton").click(function(){
 });
 
 //-----Question Check-----
-
+function check (){
+  
+}
 
 
 
