@@ -2,9 +2,9 @@ $(document).ready(function(){
 
   //Global Variables
   var counter;
-  var correctCounter= 0;
-  var incorrectCounter;
-  var unansweredCounter;
+  var correctCounter=0;
+  var incorrectCounter=0;
+  var unansweredCounter=0;
   var timeRemaining;
 
 
@@ -46,11 +46,26 @@ $("#resetButton").click(function(){
 });
 
 //-----Question Check-----
-function check (){
-  
+function check(){
+  for(var i = 1; i <= 45; i++) {
+    var radios = document.getElementsByName("q" + i);
+    for(var j = 0; j < radios.length; j++) {
+      var radio = radios[j];
+      if(radio.value === "correct" && radio.checked) {
+        correctCounter++;
+      }
+      if(radio.value === "incorrect" && radio.checked) {
+        incorrectCounter++;
+      }
+    }
+    
+  }
+  $("#numCorrect").text(correctCounter);
+  $("#numIncorrect").text(incorrectCounter);
+  // numCorrect
+  // numIncorrect
+  // numUnanswered
 }
-
-
 
 
 })
