@@ -1,4 +1,4 @@
-# TriviaGame
+# Trivia Game
 
 This is a trivia game about world history.
 
@@ -9,6 +9,8 @@ After selecting an answer for each question, the user will click on the submit b
 Future Game Features
 
 - There will be a button to reset the game from the start with a fresh timer and score without refreshing the page.
+
+- There will be a personal message giving the user a grade based on the range of correct answers.
 
 Background Image Source: http://www.billfrymire.com/gallery/polar-grid-stone-world-map-flat-sepia.jpg.html
 

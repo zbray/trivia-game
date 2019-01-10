@@ -38,7 +38,7 @@ function showResults(){
     }, 1000);
   });
 
-//Submit Button - Submits Answers, returns totals, maybe returns message based on score, offers reset
+//Submit Button - Submits Answers, returns totals
   $("#submitButton").click(function(){
     clearInterval(timer);
     showResults();
@@ -46,17 +46,17 @@ function showResults(){
   });
 
 //Reset Button - Unchecks previously selected answers, hides quizContent, hides results screen, resets counter integers
-//and displays startButton inviting user to try again.
-  $("#resetButton").click(function(){
-    $("#startButton").toggle();
-    $("#resultsContent").toggle();
-    $('input[type=radio]').prop('checked', function () {
-      return this.getAttribute('checked') == 'checked';
-  });
-    correctCounter=0;
-    incorrectCounter=0;
-    unansweredCounter=0;
-  });
+//and displays startButton inviting user to try again. This is disabled for now after a bug was discovered in the timer
+  // $("#resetButton").click(function(){
+  //   $("#startButton").toggle();
+  //   $("#resultsContent").toggle();
+  //   $('input[type=radio]').prop('checked', function () {
+  //     return this.getAttribute('checked') == 'checked';
+  // });
+  //   correctCounter=0;
+  //   incorrectCounter=0;
+  //   unansweredCounter=0;
+  // });
 
 //--Function for Checking Answers--
   function check(){
