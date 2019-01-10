@@ -12,4 +12,4 @@ Future Game Features
 
 Background Image Source: http://www.billfrymire.com/gallery/polar-grid-stone-world-map-flat-sepia.jpg.html
 
-![Alt text](assets/images/background.jpg?raw=true "Title")
+![Alt text](assets/images/readme.jpg?raw=true "Title")
