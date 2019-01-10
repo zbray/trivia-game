@@ -11,3 +11,5 @@ Future Game Features
 - There will be a button to reset the game from the start with a fresh timer and score without refreshing the page.
 
 Background Image Source: http://www.billfrymire.com/gallery/polar-grid-stone-world-map-flat-sepia.jpg.html
+
+![Alt text](assets/images/background.jpg?raw=true "Title")
