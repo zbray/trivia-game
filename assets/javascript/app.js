@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-//Global Variables
+//--Global Variables--
   var timer =0;
   var correctCounter=0;
   var incorrectCounter=0;
@@ -8,7 +8,13 @@ $(document).ready(function(){
   var timeRemaining;
   var numQ = 10;
 
-// -----BUTTONS-----
+//--Functions--
+function showResults(){
+  $("#quizContent").hide();
+  $("#resultsContent").show();
+};
+
+//--Buttons--
 //Start Button - Displays quiz content, starts countdown, hides start button when user clicks start
   $("#startButton").click(function(){
     $("#startButton").hide();
@@ -33,11 +39,6 @@ $(document).ready(function(){
   });
 
 //Submit Button - Submits Answers, returns totals, maybe returns message based on score, offers reset
-  function showResults(){
-    $("#quizContent").hide();
-    $("#resultsContent").show();
-  };
-
   $("#submitButton").click(function(){
     clearInterval(timer);
     showResults();
@@ -57,7 +58,7 @@ $(document).ready(function(){
     unansweredCounter=0;
   });
 
-//-----Question Check Function-----
+//--Function for Checking Answers--
   function check(){
     for(var i = 1; i <= numQ; i++) {
       var radios = document.getElementsByName("q" + i);

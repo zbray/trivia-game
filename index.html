@@ -5,21 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>World Geography Trivia</title>
-<!-- javascript, CSS and Bootstrap links -->
+<!-- CSS and Bootstrap links -->
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <!-- <div class="col-md-3"></div> -->
       <div id="gameBanner">
         <h1>World History Trivia</h1>
         <button id="startButton">Start</button>
       </div>
     </div>
+    
+    <!--Quiz Content-->
     <div class="row">
-      <!--Quiz Content-->
       <div class="gameScreen" id="quizContent">
         <p>Time Remaining: <span id="timeRemaining"></span></p>
         <div id="qOne">
@@ -104,6 +104,8 @@
         </div>
         <button id="submitButton">Submit</button><br>
       </div>
+
+      <!-- Results Content -->
       <div class="gameScreen" id="resultsContent">
         <p>
           <span id="winCondition"></span>
@@ -111,11 +113,9 @@
           Correct Answers: <span id="numCorrect"></span><br>
           Incorrect Answers: <span id="numIncorrect"></span><br>
           Unanswered: <span id="numUnanswered"></span><br><br>
-          <button id="resetButton">Reset</button>
+          <!-- Removing Reset button for now after discovering countdown bug -->
+          <!-- <button id="resetButton">Reset</button> -->
         </p>
-      </div>
-      <div class="gameScreen" id="timesUp">
-        <p></p>
       </div>
     </div>
   </div>
@@ -126,6 +126,7 @@
       Copyright &copy; 2018 Zach Bray
   </div>
 </footer>
+
 <!--Jquery and local Javascript links-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>
