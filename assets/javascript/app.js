@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //Global Variables
-  var timer;
+  var timer =0;
   var correctCounter=0;
   var incorrectCounter=0;
   var unansweredCounter=0;
@@ -13,7 +13,6 @@ $(document).ready(function(){
   $("#startButton").click(function(){
     $("#startButton").hide();
     $("#quizContent").show();
-    clearInterval(timer);
     var timer = 120
     setInterval(function(){
       clearInterval(timer);
