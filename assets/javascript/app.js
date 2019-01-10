@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //Global Variables
-  var counter;
+  var timer;
   var correctCounter=0;
   var incorrectCounter=0;
   var unansweredCounter=0;
@@ -12,17 +12,22 @@ $(document).ready(function(){
 //Start Button - Displays quiz content, starts countdown, hides start button when user clicks start
   $("#startButton").click(function(){
     $("#startButton").hide();
-    $("#quizContent").toggle();
-    var counter = 20;
+    $("#quizContent").show();
+    clearInterval(timer);
+    var timer = 120
     setInterval(function(){
-      counter--;
-      if (counter >= 0) {
+      clearInterval(timer);
+      timer--;
+      if (timer >= 0) {
         span = document.getElementById("timeRemaining");
-        span.innerHTML = counter;
-    }
-    if (counter === 0) {
+        span.innerHTML = timer;
+      }
+      if (timer === 0) {
         alert("Oh no! Time is up!");
-        clearInterval(counter);
+        clearInterval(timer);
+        correctCounter=0;
+        incorrectCounter=0;
+        unansweredCounter=0;
         showResults();
       }
     }, 1000);
@@ -30,13 +35,13 @@ $(document).ready(function(){
 
 //Submit Button - Submits Answers, returns totals, maybe returns message based on score, offers reset
   function showResults(){
-    $("#quizContent").toggle();
-    $("#resultsContent").toggle();
+    $("#quizContent").hide();
+    $("#resultsContent").show();
   };
 
   $("#submitButton").click(function(){
-    $("#quizContent").toggle();
-    $("#resultsContent").toggle();
+    clearInterval(timer);
+    showResults();
     check();
   });
 
