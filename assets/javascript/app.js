@@ -6,7 +6,7 @@ $(document).ready(function(){
   var incorrectCounter=0;
   var unansweredCounter=0;
   var timeRemaining;
-
+  var numQ = 10;
 
 // -----BUTTONS-----
 //Displays quiz content, starts countdown, hides start button when user clicks start
@@ -24,11 +24,17 @@ $("#startButton").click(function(){
       alert("finished!");
       clearInterval(counter);
       check();
+      showResults();
     }
   }, 1000);
 });
 
 //Submits Answers, returns totals, maybe returns message based on score, offers reset
+function showResults(){
+  $("#quizContent").toggle();
+  $("#resultsContent").toggle();
+};
+
 $("#submitButton").click(function(){
   $("#quizContent").toggle();
   $("#resultsContent").toggle();
@@ -43,11 +49,14 @@ $("#resetButton").click(function(){
   $('input[type=radio]').prop('checked', function () {
     return this.getAttribute('checked') == 'checked';
 });
+  correctCounter=0;
+  incorrectCounter=0;
+  unansweredCounter=0;
 });
 
 //-----Question Check-----
 function check(){
-  for(var i = 1; i <= 45; i++) {
+  for(var i = 1; i <= numQ; i++) {
     var radios = document.getElementsByName("q" + i);
     for(var j = 0; j < radios.length; j++) {
       var radio = radios[j];
@@ -57,15 +66,17 @@ function check(){
       if(radio.value === "incorrect" && radio.checked) {
         incorrectCounter++;
       }
+      // else{
+      //   unansweredCounter++;
+      // }
     }
-    
   }
+  unansweredCounter = numQ - correctCounter - incorrectCounter;
   $("#numCorrect").text(correctCounter);
   $("#numIncorrect").text(incorrectCounter);
+  $("#numUnanswered").text(unansweredCounter);
   // numCorrect
   // numIncorrect
   // numUnanswered
 }
-
-
 })
