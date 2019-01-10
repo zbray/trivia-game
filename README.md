@@ -1,4 +1,4 @@
-# Trivia Game
+# World History Trivia
 
 This is a trivia game about world history.
 
