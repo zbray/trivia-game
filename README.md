@@ -15,6 +15,8 @@ After selecting an answer for each question, the user will click on the submit b
 
 #### Tools Utilized
 
+HTML, CSS, Javascript, jQuery, Bootstrap, Javascript Timers
+
 #### GitHub Pages Deployment
 https://zzzbray.github.io/TriviaGame/
 
