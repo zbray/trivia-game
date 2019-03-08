@@ -17,10 +17,9 @@ After selecting an answer for each question, the user will click on the submit b
 
 HTML, CSS, Javascript, jQuery, Bootstrap, Javascript Timers
 
-#### GitHub Pages Deployment
-https://zzzbray.github.io/TriviaGame/
-
-
 Background Image Source: http://www.billfrymire.com/gallery/polar-grid-stone-world-map-flat-sepia.jpg.html
 
 ![Alt text](assets/images/readme.jpg?raw=true "Title")
+
+#### GitHub Pages Deployment
+https://zzzbray.github.io/triviaGame/
