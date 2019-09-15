@@ -22,4 +22,4 @@ Background Image Source: http://www.billfrymire.com/gallery/polar-grid-stone-wor
 ![Alt text](assets/images/readme.jpg?raw=true "Title")
 
 #### GitHub Pages Deployment
-https://zzzbray.github.io/triviaGame/
+https://zbray.github.io/triviaGame/
